@@ -1,3 +1,7 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+
 data = pd.read_csv("tennis.csv")
-data.to_csv("tennis.csv", index=False)
+play = data['play']
+plt.hist(play)
